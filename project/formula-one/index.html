@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formula 1 Ultimate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+
+    <div class="logo">
+      F1 2026
+    </div>
+
+    <div class="nav-menu">
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#timeline" class="nav-link">History</a>
+      <a href="#calendar" class="nav-link">Calendar</a>
+      <a href="#teams" class="nav-link">Teams</a>
+      <a href="#results" class="nav-link">Results</a>
+      <a href="#driver-standings" class="nav-link">Standings</a>
+      <a href="#constructor-standings" class="nav-link">Constructors</a>
+      <a href="#driver-season" class="nav-link">Season Stars</a>
+      <a href="#next-race" class="nav-link">Next Race</a>
+      <a href="#circuits" class="nav-link">Circuits</a>
+      <a href="#statistics" class="nav-link">Statistics</a>
+      <a href="#champions" class="nav-link">Champions</a>
+    </div>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </nav>
+
+  <!-- LOADING -->
+  <div id="loading">
+    <div class="track">
+      <div class="car red"></div>
+      <div class="car blue"></div>
+    </div>
+    <p>Engines Starting...</p>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero-wrapper frame" id="hero">
+
+    <!-- VIDEO BACKGROUND -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="../asset/hero-video.mp4" type="video/mp4">
+    </video>
+
+    <!-- TITLE -->
+    <h1 class="hero-text">
+      FORMULA ONE
+    </h1>
+
+    <!-- SUBTITLE -->
+    <div class="hero-info">
+      <span>2026 SEASON</span>
+      <p>The Pinnacle of Motorsport</p>
+    </div>
+
+    <!-- SOUND -->
+    <audio id="engineSound" src="../asset/f1-engine.mp3"></audio>
+
+  </section>
+
+  <!-- TOGGLE -->
+  <div class="hero-toggle">
+    <button onclick="setFrame()">Frame</button>
+    <button onclick="setFull()">Full Width</button>
+  </div>
+
+
+  <!-- INFO -->
+  <section class="section" id="about">
+    <h2>About Formula 1</h2>
+    <p class="long-text">
+      Formula 1 (F1) is the highest level of international single-seater car racing, governed by the Fédération
+      Internationale de l’Automobile (FIA). It features the fastest and most technologically advanced racing cars in the
+      world, competing on circuits across different countries each season. F1 is known for its cutting-edge engineering,
+      where teams design cars with advanced aerodynamics, hybrid power units, and innovative materials to maximize
+      speed, efficiency, and safety.
+      <br><br>
+      Beyond speed, Formula 1 is also a strategic sport that combines driver skill, teamwork, and data-driven
+      decision-making. Teams must carefully plan race strategies involving tire management, pit stops, fuel usage, and
+      real-time responses to changing track conditions. With legendary drivers, iconic teams, and a global fanbase,
+      Formula 1 represents the perfect blend of sport, technology, and entertainment.
+    </p>
+  </section>
+
+  <section class="section" id="timeline">
+    <h2>Formula 1 History Timeline</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <span class="year">1950</span>
+        <div class="content glass">
+          <h3>Formula 1 Begins</h3>
+          <p>
+            The first official Formula 1 World Championship was held in 1950,
+            marking the birth of the most prestigious motorsport series.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year">1970s</span>
+        <div class="content glass">
+          <h3>Safety & Innovation</h3>
+          <p>
+            Major safety improvements and aerodynamic developments transformed
+            Formula 1 into a more technical and secure sport.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year">1990s</span>
+        <div class="content glass">
+          <h3>Legendary Era</h3>
+          <p>
+            Drivers like Ayrton Senna and Michael Schumacher dominated the grid,
+            shaping Formula 1's global popularity.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year">2014</span>
+        <div class="content glass">
+          <h3>Hybrid Power Units</h3>
+          <p>
+            Introduction of turbo-hybrid engines emphasizing efficiency and
+            sustainability.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year">2020+</span>
+        <div class="content glass">
+          <h3>Modern Era</h3>
+          <p>
+            Formula 1 embraces digital technology, global expansion, and
+            sustainability goals.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="calendar">
+    <h2>F1 Race Calendar</h2>
+
+    <div class="calendar">
+
+      <div class="race glass active" data-race="bahrain">
+        <span class="round">Round 1</span>
+        <h3>Bahrain Grand Prix</h3>
+        <p>Sakhir Circuit</p>
+        <small>March 2</small>
+      </div>
+
+      <div class="race glass" data-race="saudi">
+        <span class="round">Round 2</span>
+        <h3>Saudi Arabian GP</h3>
+        <p>Jeddah Street Circuit</p>
+        <small>March 9</small>
+      </div>
+
+      <div class="race glass" data-race="australia">
+        <span class="round">Round 3</span>
+        <h3>Australian GP</h3>
+        <p>Albert Park</p>
+        <small>March 24</small>
+      </div>
+
+    </div>
+
+
+    </div>
+  </section>
+
+  <div class="modal" id="resultModal">
+    <div class="modal-content glass result-box">
+      <h3 id="raceTitle">Race Result</h3>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th>Driver</th>
+            <th>Team</th>
+            <th>Pts</th>
+          </tr>
+        </thead>
+        <tbody id="resultBody"></tbody>
+      </table>
+
+      <button onclick="closeResult()">Close</button>
+    </div>
+  </div>
+
+  <!-- TEAMS -->
+  <section class="section dark" id="teams">
+    <h2>F1 Teams 2026</h2>
+
+    <div class="teams">
+
+      <!-- TEMPLATE TEAM -->
+      <div class="team glass" data-d1="Lando Norris" data-d2="Oscar Piastri"
+        data-img1="https://i.pinimg.com/1200x/18/0b/6a/180b6ae17598385eb1f2a07777a77ce0.jpg"
+        data-img2="https://i.pinimg.com/736x/74/a3/16/74a316fde307938276ad04b81e523240.jpg">
+        <img class="team-car" src="https://www.formula1.com/content/dam/fom-website/teams/2024/mclaren.png">
+        <h3>McLaren F1 Team</h3>
+        <p>Engine: Mercedes</p>
+      </div>
+
+
+      <div class="team glass" data-d1="George Russell" data-d2="Kimi Antonelli"
+        data-img1="https://i.pinimg.com/1200x/9f/7f/63/9f7f6367f480ca8a5872da5753cd9c37.jpg"
+        data-img2="https://i.pinimg.com/736x/f7/2b/5a/f72b5aae4a300043a1997615838e9029.jpg">
+        <img class="team-car"
+          src="https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/common/f1/2025/mercedes/2025mercedescarright.webp">
+        <h3>Mercedes F1 Team</h3>
+        <p>Engine: Mercedes</p>
+      </div>
+
+      <div class="team glass" data-d1="Max Verstappen" data-d2="Isack Hadjar"
+        data-img1="https://i.pinimg.com/1200x/51/cb/48/51cb4839699bed0ea8afa9f771c2a345.jpg"
+        data-img2="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSijL608cIkjzkL6yVTJgrRnJnT1dCK9YdMFg&s">
+        <img class="team-car"
+          src="https://media.formula1.com/image/upload/c_lfill,w_512/q_auto/d_common:f1:2026:fallback:car:2026fallbackcarright.webp/v1740000000/common/f1/2026/redbullracing/2026redbullracingcarright.webp">
+        <h3>Oracle Red Bull Racing F1 Team</h3>
+        <p>Engine: Red Bull Ford</p>
+      </div>
+
+      <div class="team glass" data-d1="Charles Leclerc" data-d2="Lewis Hamilton"
+        data-img1="https://i.pinimg.com/736x/63/ae/1b/63ae1b2000343836519aade2d3a4b6f7.jpg"
+        data-img2="https://i.pinimg.com/1200x/63/d5/b9/63d5b9ac8c6be74668b437b3f6518fab.jpg">
+        <img class="team-car" src="https://www.formula1.com/content/dam/fom-website/teams/2024/ferrari.png"
+          alt="Ferrari F1 Car">
+        <h3>Ferrari F1 Team</h3>
+        <p>Engine: Ferrari</p>
+      </div>
+
+      <div class="team glass" data-d1="Alex Albon" data-d2="Carlos Sainz"
+        data-img1="https://i.pinimg.com/736x/7b/4e/ae/7b4eaef3154094e15aca9f94d2b2c989.jpg"
+        data-img2="https://i.pinimg.com/736x/1c/07/49/1c0749ad71d9f912d0f9396c6ec3f5c9.jpg">
+        <img class="team-car"
+          src="https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/common/f1/2025/williams/2025williamscarright.webp">
+        <h3>Williams F1 Team</h3>
+        <p>Engine: Mercedes</p>
+      </div>
+
+      <div class="team glass" data-d1="Nico Hülkenberg" data-d2="Gabriel Bortoleto"
+        data-img1="https://i.pinimg.com/736x/14/2b/71/142b713b51649417564b89ed873d8abb.jpg"
+        data-img2="https://cdn-7.motorsport.com/images/mgl/27NQLaX0/s8/gabriel-bortoleto-audi-f1-team.jpg">
+        <img class="team-car"
+          src="https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000001/common/f1/2026/audi/2026audicarright.webp">
+        <h3>Audi F1 Team</h3>
+        <p>Engine: Audi</p>
+      </div>
+
+      <div class="team glass" data-d1="Fernando Alonso" data-d2="Lance Stroll"
+        data-img1="https://i.pinimg.com/1200x/c4/b6/24/c4b624a8503eafd865c35b19fe35ec11.jpg"
+        data-img2="https://i.pinimg.com/1200x/0b/db/19/0bdb1936c7fbe49ce4e1019c9e6ea769.jpg">
+        <img class="team-car"
+          src="https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/common/f1/2025/astonmartin/2025astonmartincarright.webp">
+        <h3>Aston Martin F1 Team</h3>
+        <p>Engine: Honda</p>
+      </div>
+
+      <div class="team glass" data-d1="Liam Lawson" data-d2="Arvid Lindblad"
+        data-img1="https://www.formulaonehistory.com/wp-content/uploads/2024/01/Liam-Lawson-F1-2024-Red-Bull.webp"
+        data-img2="https://www.formulaonehistory.com/wp-content/uploads/2025/12/Arvid-Lindblad-Racing-Bulls-2026.webp">
+        <img class="team-car"
+          src="https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/common/f1/2025/racingbulls/2025racingbullscarright.webp">
+        <h3>Racing Bulls F1 Team</h3>
+        <p>Engine: Red Bull Ford</p>
+      </div>
+
+      <div class="team glass" data-d1="Esteban Ocon" data-d2="Oliver Bearman"
+        data-img1="https://i.pinimg.com/736x/03/a1/a1/03a1a1e842c76990ea4f11b612cac193.jpg"
+        data-img2="https://i.pinimg.com/1200x/7e/c6/11/7ec6112655e9cf0fe3c4bfd9b3cafeef.jpg">
+        <img class="team-car"
+          src="https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/common/f1/2025/haas/2025haascarright.webp">
+        <h3>TGR Haas F1 Team</h3>
+        <p>Engine: Ferrari</p>
+      </div>
+
+      <div class="team glass" data-d1="Pierre Gasly" data-d2="Franco Colapinto"
+        data-img1="https://i.pinimg.com/1200x/b7/10/4a/b7104a6e289b3b5646d1b694ea9e0d49.jpg"
+        data-img2="https://i.pinimg.com/736x/68/69/3d/68693dcbfc579414f9aa110c9733d53b.jpg">
+        <img class="team-car"
+          src="https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/common/f1/2025/alpine/2025alpinecarright.webp">
+        <h3>Alpine F1 Team</h3>
+        <p>Engine: Mercedes</p>
+      </div>
+
+      <div class="team glass" data-d1="Sergio Perez" data-d2="Valtteri Bottas"
+        data-img1="https://www.formulaonehistory.com/wp-content/uploads/2023/10/Sergio-Perez-Cadillac.webp"
+        data-img2="https://www.formulaonehistory.com/wp-content/uploads/2023/10/Valtteri-Bottas-Cadillac.webp">
+        <img class="team-car"
+          src="https://media.formula1.com/image/upload/c_lfill,w_512/q_auto/d_common:f1:2026:fallback:car:2026fallbackcarright.webp/v1740000001/common/f1/2026/cadillac/2026cadillaccarright.webp">
+        <h3>Cadillac F1 Team</h3>
+        <p>Engine: Ferrari</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="section dark" id="results">
+    <h2>2026 Race Results</h2>
+
+    <div class="f1-table glass">
+
+      <div class="f1-head">
+        <span>Grand Prix</span>
+        <span>Date</span>
+        <span>Winner</span>
+        <span>Team</span>
+        <span>Laps</span>
+        <span>Time</span>
+      </div>
+
+      <div class="f1-row">
+        <span>🇦🇺 Australia</span>
+        <span>08 Mar</span>
+
+        <span class="winner">
+          <img class="driver" src="https://i.pinimg.com/1200x/9f/7f/63/9f7f6367f480ca8a5872da5753cd9c37.jpg">
+          George Russell
+        </span>
+
+        <span class="team-cell">
+          <img class="team-logo" src="https://i.pinimg.com/1200x/ad/d4/f6/add4f669dfb1b1eaeb2afde6a8d7db06.jpg">
+          Mercedes
+        </span>
+
+        <span>58</span>
+        <span>1:23:06.801</span>
+      </div>
+
+      <div class="f1-row">
+        <span>🇨🇳 China</span>
+        <span>15 Mar</span>
+
+        <span class="winner">
+          <img class="driver" src="https://i.pinimg.com/736x/f7/2b/5a/f72b5aae4a300043a1997615838e9029.jpg">
+          Kimi Antonelli
+        </span>
+
+        <span class="team-cell">
+          <img class="team-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/99/Mercedes-Benz_Star_Logo_2.svg">
+          Mercedes
+        </span>
+
+        <span>56</span>
+        <span>1:33:15.607</span>
+      </div>
+
+      <div class="f1-row">
+        <span>🇯🇵 Japan</span>
+        <span>29 Mar</span>
+
+        <span class="winner">
+          <img class="driver" src="https://i.pinimg.com/736x/f7/2b/5a/f72b5aae4a300043a1997615838e9029.jpg">
+          Kimi Antonelli
+        </span>
+
+        <span class="team-cell">
+          <img class="team-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/99/Mercedes-Benz_Star_Logo_2.svg">
+          Mercedes
+        </span>
+
+        <span>53</span>
+        <span>1:28:03.403</span>
+      </div>
+
+      <div class="f1-row">
+        <span>🇺🇸 Miami</span>
+        <span>03 May</span>
+
+        <span class="winner">
+          <img class="driver" src="https://i.pinimg.com/736x/f7/2b/5a/f72b5aae4a300043a1997615838e9029.jpg">
+          Kimi Antonelli
+        </span>
+
+        <span class="team-cell">
+          <img class="team-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/99/Mercedes-Benz_Star_Logo_2.svg">
+          Mercedes
+        </span>
+
+        <span>57</span>
+        <span>1:33:19.273</span>
+      </div>
+
+      <div class="f1-row">
+        <span>🇨🇦 Canada</span>
+        <span>24 May</span>
+
+        <span class="winner">
+          <img class="driver" src="https://i.pinimg.com/736x/f7/2b/5a/f72b5aae4a300043a1997615838e9029.jpg">
+          Kimi Antonelli
+        </span>
+
+        <span class="team-cell">
+          <img class="team-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/99/Mercedes-Benz_Star_Logo_2.svg">
+          Mercedes
+        </span>
+
+        <span>68</span>
+        <span>1:28:15.758</span>
+      </div>
+
+      <div class="f1-row">
+        <span>🇲🇨 Monaco</span>
+        <span>07 Jun</span>
+
+        <span class="winner">
+          <img class="driver" src="https://i.pinimg.com/736x/f7/2b/5a/f72b5aae4a300043a1997615838e9029.jpg">
+          Kimi Antonelli
+        </span>
+
+        <span class="team-cell">
+          <img class="team-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/99/Mercedes-Benz_Star_Logo_2.svg">
+          Mercedes
+        </span>
+
+        <span>78</span>
+        <span>2:23:31.243</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content glass">
+      <div class="drivers">
+        <div>
+          <img id="img1">
+          <p id="name1"></p>
+        </div>
+        <div>
+          <img id="img2">
+          <p id="name2"></p>
+        </div>
+      </div>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <section class="section dark" id="driver-standings">
+    <h2>Driver Standings 2026</h2>
+
+    <div class="standings-table glass">
+
+      <div class="standings-head">
+        <span>Pos</span>
+        <span>Driver</span>
+        <span>Team</span>
+        <span>Points</span>
+      </div>
+
+      <div class="standing-row leader">
+        <span>1</span>
+        <span>Kimi Antonelli</span>
+        <span>Mercedes</span>
+        <span>156</span>
+      </div>
+
+      <div class="standing-row">
+        <span>2</span>
+        <span>Lewis Hamilton</span>
+        <span>Ferrari</span>
+        <span>90</span>
+      </div>
+
+      <div class="standing-row">
+        <span>3</span>
+        <span>George Russell</span>
+        <span>Mercedes</span>
+        <span>88</span>
+      </div>
+
+      <div class="standing-row">
+        <span>4</span>
+        <span>Charles Leclerc</span>
+        <span>Ferrari</span>
+        <span>75</span>
+      </div>
+
+      <div class="standing-row">
+        <span>5</span>
+        <span>Oscar Piastri</span>
+        <span>McLaren</span>
+        <span>58</span>
+      </div>
+
+      <div class="standing-row">
+        <span>6</span>
+        <span>Lando Norris</span>
+        <span>McLaren</span>
+        <span>58</span>
+      </div>
+
+      <div class="standing-row">
+        <span>7</span>
+        <span>Max Verstappen</span>
+        <span>Red Bull Racing</span>
+        <span>43</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section dark" id="constructor-standings">
+    <h2>Constructor Standings 2026</h2>
+
+    <div class="constructors">
+
+      <div class="constructor-card mercedes">
+        <div class="constructor-info">
+          <span class="position">1</span>
+
+          <div>
+            <h3>Mercedes</h3>
+            <p>George Russell • Kimi Antonelli</p>
+          </div>
+
+          <span class="points">244 PTS</span>
+        </div>
+
+        <div class="progress">
+          <div class="fill" style="width:100%"></div>
+        </div>
+      </div>
+
+      <div class="constructor-card ferrari">
+        <div class="constructor-info">
+          <span class="position">2</span>
+
+          <div>
+            <h3>Ferrari</h3>
+            <p>Lewis Hamilton • Charles Leclerc</p>
+          </div>
+
+          <span class="points">165 PTS</span>
+        </div>
+
+        <div class="progress">
+          <div class="fill" style="width:68%"></div>
+        </div>
+      </div>
+
+      <div class="constructor-card mclaren">
+        <div class="constructor-info">
+          <span class="position">3</span>
+
+          <div>
+            <h3>McLaren</h3>
+            <p>Lando Norris • Oscar Piastri</p>
+          </div>
+
+          <span class="points">116 PTS</span>
+        </div>
+
+        <div class="progress">
+          <div class="fill" style="width:48%"></div>
+        </div>
+      </div>
+
+      <div class="constructor-card redbull">
+        <div class="constructor-info">
+          <span class="position">4</span>
+
+          <div>
+            <h3>Red Bull Racing</h3>
+            <p>Max Verstappen • Isack Hadjar</p>
+          </div>
+
+          <span class="points">43 PTS</span>
+        </div>
+
+        <div class="progress">
+          <div class="fill" style="width:18%"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="driver-season section" id="driver-season">
+
+    <h2>Drivers Of The Season 2026</h2>
+
+    <div class="season-grid">
+
+      <!-- Antonelli -->
+      <div class="season-card mercedes">
+        <img src="https://i.pinimg.com/1200x/41/b4/90/41b4909976b9634cbfabb79c7b6ece43.jpg" alt="Kimi Antonelli">
+
+        <div class="season-content">
+          <span class="season-badge">Mercedes</span>
+
+          <h3>Andrea Kimi Antonelli</h3>
+
+          <p>
+            Consistently at the front with multiple victories,
+            including dominant wins in Monaco and Canada.
+          </p>
+        </div>
+      </div>
+
+      <!-- Russell -->
+      <div class="season-card mercedes">
+        <img src="https://i.pinimg.com/736x/6f/41/50/6f4150140c188e620888120384176266.jpg" alt="George Russell">
+
+        <div class="season-content">
+          <span class="season-badge">Mercedes</span>
+
+          <h3>George Russell</h3>
+
+          <p>
+            Early title contender and consistent podium finisher,
+            keeping Mercedes at the top.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hamilton -->
+      <div class="season-card ferrari">
+        <img src="https://i.pinimg.com/1200x/b0/b7/39/b0b73931f614fabd2705534742a82dfc.jpg" alt="Lewis Hamilton">
+
+        <div class="season-content">
+          <span class="season-badge">Ferrari</span>
+
+          <h3>Lewis Hamilton</h3>
+
+          <p>
+            Building momentum in his Ferrari campaign with
+            consecutive podium finishes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hadjar -->
+      <div class="season-card redbull">
+        <img src="https://i.pinimg.com/736x/74/d1/1f/74d11fb16b4354fa295d7956ba3b5bb2.jpg" alt="Isack Hadjar">
+
+        <div class="season-content">
+          <span class="season-badge">Red Bull Racing</span>
+
+          <h3>Isack Hadjar</h3>
+
+          <p>
+            One of the biggest surprises of 2026,
+            consistently scoring points for Red Bull.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="countdown-section section" id="next-race">
+
+    <h2>Next Race Countdown</h2>
+
+    <div class="countdown-card glass">
+
+      <div class="race-info">
+        <span class="race-round">Round 8</span>
+
+        <h3>Austrian Grand Prix 2026</h3>
+
+        <p>Red Bull Ring • Spielberg, Austria</p>
+
+        <small>28 June 2026</small>
+      </div>
+
+      <div class="countdown-timer">
+
+        <div class="time-box">
+          <span id="days">00</span>
+          <p>Days</p>
+        </div>
+
+        <div class="time-box">
+          <span id="hours">00</span>
+          <p>Hours</p>
+        </div>
+
+        <div class="time-box">
+          <span id="minutes">00</span>
+          <p>Minutes</p>
+        </div>
+
+        <div class="time-box">
+          <span id="seconds">00</span>
+          <p>Seconds</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="section legendary-circuits" id="circuits">
+
+    <h2>Legendary Circuits</h2>
+
+    <div class="circuits-grid">
+
+      <!-- MONACO -->
+      <div class="circuit-card glass">
+        <img src="https://i.pinimg.com/736x/8b/a1/94/8ba194527291e87a9c552422141ed413.jpg" alt="Monaco Circuit">
+
+        <div class="circuit-info">
+          <h3>Monaco Grand Prix</h3>
+          <p>Monte Carlo, Monaco 🇲🇨</p>
+
+          <div class="circuit-stats">
+            <span>3.337 km</span>
+            <span>19 Turns</span>
+            <span>1950</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SILVERSTONE -->
+      <div class="circuit-card glass">
+        <img src="https://i.pinimg.com/1200x/d7/5e/27/d75e27ce29dc59647c6a51414b570770.jpg" alt="Silverstone">
+
+        <div class="circuit-info">
+          <h3>Silverstone Circuit</h3>
+          <p>United Kingdom 🇬🇧</p>
+
+          <div class="circuit-stats">
+            <span>5.891 km</span>
+            <span>18 Turns</span>
+            <span>1950</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SPA -->
+      <div class="circuit-card glass">
+        <img src="https://i.pinimg.com/1200x/bc/e9/ea/bce9eadc8bd3cff011b9dd569b4067b1.jpg" alt="Spa">
+
+        <div class="circuit-info">
+          <h3>Spa-Francorchamps</h3>
+          <p>Belgium 🇧🇪</p>
+
+          <div class="circuit-stats">
+            <span>7.004 km</span>
+            <span>19 Turns</span>
+            <span>1950</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONZA -->
+      <div class="circuit-card glass">
+        <img src="https://i.pinimg.com/736x/c5/ea/d8/c5ead802855ed6a7f7bc68d6c4d439d9.jpg" alt="Monza">
+
+        <div class="circuit-info">
+          <h3>Monza Circuit</h3>
+          <p>Italy 🇮🇹</p>
+
+          <div class="circuit-stats">
+            <span>5.793 km</span>
+            <span>11 Turns</span>
+            <span>1950</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUZUKA -->
+      <div class="circuit-card glass">
+        <img src="https://i.pinimg.com/736x/ab/e4/b2/abe4b24ea29ca3830868329e0fb8886f.jpg" alt="Suzuka">
+
+        <div class="circuit-info">
+          <h3>Suzuka Circuit</h3>
+          <p>Japan 🇯🇵</p>
+
+          <div class="circuit-stats">
+            <span>5.807 km</span>
+            <span>18 Turns</span>
+            <span>1987</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERLAGOS -->
+      <div class="circuit-card glass">
+        <img src="https://i.pinimg.com/736x/b1/ac/18/b1ac1848f6abb3a5b396c010cce08646.jpg" alt="Interlagos">
+
+        <div class="circuit-info">
+          <h3>Interlagos Circuit</h3>
+          <p>Brazil 🇧🇷</p>
+
+          <div class="circuit-stats">
+            <span>4.309 km</span>
+            <span>15 Turns</span>
+            <span>1973</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="section season-statistics" id="statistics">
+
+    <h2>Season Statistics 2026</h2>
+
+    <div class="stats-grid">
+
+      <div class="stat-card glass">
+        <h3>22</h3>
+        <p>Race Weekends</p>
+      </div>
+
+      <div class="stat-card glass">
+        <h3>6</h3>
+        <p>Races Completed</p>
+      </div>
+
+      <div class="stat-card glass">
+        <h3>6</h3>
+        <p>Mercedes Wins</p>
+      </div>
+
+      <div class="stat-card glass">
+        <h3>#1</h3>
+        <p>Constructor Leader</p>
+      </div>
+
+    </div>
+
+    <div class="season-highlight glass">
+
+      <div class="highlight-box">
+        <span>🏆</span>
+        <h3>Kimi Antonelli</h3>
+        <p>Championship Leader</p>
+      </div>
+
+      <div class="highlight-box">
+        <span>🥈</span>
+        <h3>Lewis Hamilton</h3>
+        <p>Most Consistent Driver</p>
+      </div>
+
+      <div class="highlight-box">
+        <span>🚀</span>
+        <h3>Mercedes</h3>
+        <p>Leading Constructor</p>
+      </div>
+
+      <div class="highlight-box">
+        <span>⭐</span>
+        <h3>Isack Hadjar</h3>
+        <p>Breakthrough Rookie</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="section champions" id="champions">
+
+    <h2>World Champions History</h2>
+
+    <div class="champions-grid">
+
+      <div class="champion-card glass">
+        <img src="https://i.pinimg.com/736x/c4/0f/1e/c40f1e9d2d92f8b78fe5d3c1208e85bc.jpg">
+        <div class="champion-info">
+          <span class="champion-era">1994 - 2004</span>
+          <h3>Michael Schumacher</h3>
+          <h4>7 World Championships</h4>
+          <p>Most successful Ferrari driver in Formula One history.</p>
+        </div>
+      </div>
+
+      <div class="champion-card glass">
+        <img src="https://i.pinimg.com/736x/33/cd/02/33cd029d313b2f0cf0e14284b31d5cbe.jpg">
+        <div class="champion-info">
+          <span class="champion-era">2008 - 2020</span>
+          <h3>Lewis Hamilton</h3>
+          <h4>7 World Championships</h4>
+          <p>Joint record holder for most F1 titles.</p>
+        </div>
+      </div>
+
+      <div class="champion-card glass">
+        <img src="https://i.pinimg.com/736x/0b/2d/43/0b2d43d92f8f89cf23d60d5b1cb4017b.jpg">
+        <div class="champion-info">
+          <span class="champion-era">1951 - 1957</span>
+          <h3>Juan Manuel Fangio</h3>
+          <h4>5 World Championships</h4>
+          <p>The dominant force of Formula One's early era.</p>
+        </div>
+      </div>
+
+      <div class="champion-card glass">
+        <img src="https://i.pinimg.com/1200x/1f/86/51/1f8651e6a249382dc4c3d01359ecdf87.jpg">
+        <div class="champion-info">
+          <span class="champion-era">2021 - 2024</span>
+          <h3>Max Verstappen</h3>
+          <h4>4 World Championships</h4>
+          <p>Red Bull's dominant champion of the modern era.</p>
+        </div>
+      </div>
+
+      <div class="champion-card glass featured">
+        <img src="https://i.pinimg.com/1200x/63/0e/46/630e462f213360df5b25a039276f1221.jpg">
+        <div class="champion-info">
+          <span class="champion-era">2025 Champion</span>
+          <h3>Lando Norris</h3>
+          <h4>World Champion</h4>
+          <p>McLaren's first Drivers' Champion since 2008.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="footer">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <h2>FORMULA ONE ULTIMATE</h2>
+
+        <p>
+          A modern Formula 1 web experience featuring
+          2026 standings, teams, legendary circuits,
+          race statistics, and championship history.
+        </p>
+
+        <p class="creator">
+          Designed & Developed by <span>Falenn</span>
+        </p>
+      </div>
+
+      <div class="footer-links">
+
+        <div>
+          <h4>Navigation</h4>
+
+          <a href="#hero">Home</a>
+          <a href="#teams">Teams</a>
+          <a href="#standings">Standings</a>
+          <a href="#gallery">Gallery</a>
+        </div>
+
+        <div>
+          <h4>Featured</h4>
+
+          <a href="#">Race Calendar</a>
+          <a href="#">Driver Standings</a>
+          <a href="#">Constructors</a>
+          <a href="#">World Champions</a>
+        </div>
+
+        <div>
+          <h4>Formula One</h4>
+
+          <a href="https://www.formula1.com/" target="_blank">Official Website</a>
+          <a href="https://www.fia.com/" target="_blank">FIA</a>
+          <a href="https://www.formula1.com/en/latest/all.html" target="_blank">Latest News</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-line"></div>
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Formula One Ultimate • Designed & Developed by
+        <span>Falenn</span>
+      </p>
+
+      <div class="socials">
+
+        <a href="#">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <img id="lightboxImg">
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

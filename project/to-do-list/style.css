@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+
+  /* BACKGROUND GIF */
+  background: url("https://i.pinimg.com/1200x/35/0f/02/350f02458ebc0e43023ae5217bdc2a7d.jpg") center / cover no-repeat fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+.todo-container {
+  width: 380px;
+  background: rgba(2, 6, 23, 0.95);
+  padding: 26px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* INPUT */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.input-group button {
+  background: #38bdf8;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* INFO */
+.todo-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.clear-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* LIST */
+ul {
+  list-style: none;
+}
+
+li {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  animation: slideIn 0.3s ease;
+}
+
+li.done span {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* BUTTONS */
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.actions button {
+  border: none;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.edit {
+  background: #22c55e;
+}
+
+.delete {
+  background: #ef4444;
+}
+
+/* ANIMATIONS */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
